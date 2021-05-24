@@ -45,28 +45,31 @@
                 </article>
                 <section class="comment-box">
                     <h2>comments:</h2>
-                    <section class="comment1">
-                        <div class="cmt-img">
-                            <img src="./assets/comment-1.jpg" alt="picture of commenter">
-                        </div>
-                        <section class="cmt-date">
-                            <p><time datetime="2018-10-09 00:00">Tuesday October 9th, 2018</time>by Jeremy</p>
-                        </section>
-                        <p class="cmt-text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor debitis omnis harum fugit id dolores inventore quisquam optio perferendis corrupti! Deserunt praesentium quas voluptatum accusantium natus autem id libero dicta ducimus pariatur ipsam est unde alias dolores incidunt vitae ut a placeat, corporis temporibus dolorum.
-                        </p>
-                    </section>
-                    <section class="comment2">
-                        <div class="cmt-img">
-                            <img src="./assets/comment-2.jpg" alt="picture of commenter">
-                        </div>
-                        <section class="cmt-date">
-                            <p><time datetime="2018-10-09 00:00">Wednesday October 10th, 2018</time>by Julia</p>
-                        </section>
-                        <p class="cmt-text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor debitis omnis harum fugit id dolores inventore quisquam optio perferendis corrupti! Deserunt praesentium quas voluptatum accusantium natus autem id libero dicta ducimus pariatur ipsam est unde alias dolores incidunt vitae ut a placeat, corporis temporibus dolorum.
-                        </p>
-                    </section>
+                    <ul class="comments">
+
+                        <li class="comment">
+                            <div class="avatar">
+                                <img src="./assets/comment-1.jpg" alt="picture of commenter's avatar">
+                            </div>
+                            <div class="flex-container">                           
+                                <p class="cmt-date"><time datetime="2018-10-09 00:00">Tuesday October 9th, 2018</time> by Jeremy</p>
+                                <p class="cmt-text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor debitis omnis harum fugit id dolores inventore quisquam optio perferendis corrupti! Deserunt praesentium quas voluptatum accusantium natus autem id libero dicta ducimus pariatur ipsam est unde alias dolores incidunt vitae ut a placeat, corporis temporibus dolorum.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="comment">
+                            <div class="avatar">
+                                <img src="./assets/comment-2.jpg" alt="picture of commenter's avatar">
+                            </div>
+                            <div class="flex-container">                                                   
+                                <p class="cmt-date"><time datetime="2018-10-09 00:00">Wednesday October 10th, 2018</time> by Julia</p>
+                                <p class="cmt-text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor debitis omnis harum fugit id dolores inventore quisquam optio perferendis corrupti! Deserunt praesentium quas voluptatum accusantium natus autem id libero dicta ducimus pariatur ipsam est unde alias dolores incidunt vitae ut a placeat, corporis temporibus dolorum.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
                     <form action="#">
                         <fieldset>
                             <legend class="sr-only">Enter your</legend>
@@ -77,14 +80,15 @@
                             <input type="email" name="email" id="email" placeholder="Email address">
                             
                             <label for="comment-text" class="sr-only">comment text</label>
-                            <textarea name="comment-text" id="comment-text" cols="30" rows="10"></textarea>
+                            <textarea name="comment-text" id="comment-text" cols="" rows="10" placeholder="Comment"></textarea>
                             
                             <button type="submit">post comment</button>
                         </fieldset>
                     </form>
                 </section>
             </div>
-        </div> //wrap blog
+        </div> 
+        <!-- wrap blog -->
         
         <aside>
             <div class="aside-image">
@@ -96,15 +100,15 @@
             </p>
             <h2>recent posts</h2>
             <ul>
-                <li>Lorem ipsum dolor sit amet.</li>
-                <li>Augue ipsum dolor sit amioi.</li>
-                <li>Semper sed dolor sit amet.</li>
-                <li>Lorem ipsum dolor sit amet.</li>
+                <li><a href="">Lorem ipsum dolor sit amet.</a></li>
+                <li><a href="">Augue ipsum dolor sit amioi.</a></li>
+                <li><a href="">Semper sed dolor sit amet.</a></li>
+                <li><a href="">Lorem ipsum dolor sit amet.</a></li>
             </ul>
         </aside>
     </main>
     <footer>
-        <p>Copyright 2021 HackerYou</p>
+        <p>Copyright <i class="far fa-copyright"></i> 2021 HackerYou</p>
     </footer>
 
 </body>
