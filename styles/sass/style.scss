@@ -21,7 +21,60 @@ $fontfm-lato: 'Lato', sans-serif;
 }
   
 // styling home page (mobile first)
+.home .hwrapper {
+    max-width: 1200px;
+    width: 85%;
+    margin: 0 auto;
+}
+.home h1 {
+    font-family: $fontfm-barlow;
+    @include font-size-mobile($fontsz-heading2); // change for dsktp
+    color: white;
+    text-transform: uppercase;
+    margin: 0;
+}
+.home header {
+    background-image: url("./../assets/header-image.jpg");
+}
+.home .nav {
+    display: none;
+}
+.home main {
+    .section1 {
+        background-color: #0c1423;
 
+    }
+    .section1>.hwrapper{
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+       align-items: center;
+       padding: 20% 10%;
+       h2 {
+        @include font-size-mobile($fontsz-heading3); // change for dsktp
+        color: white;
+        text-transform: uppercase;
+        margin-top: 0;
+        text-align: center;
+       } 
+       p {
+        @include font-size-mobile($fontsz-body); // change for dsktp 
+        color: white;
+        text-align: center;
+       }
+    }
+}
+.home button {
+    background-color: #86e0f9;
+    text-transform: uppercase;
+    @include font-size-mobile($fontsz-button);
+    text-align: center;
+    letter-spacing: 1px;
+    color: black;
+    border: 2px solid #86e0f9;
+    padding: 2% 3%;
+    margin: 1rem;
+}
 
 // styling blog post (mobile first)
 .blog h1 {

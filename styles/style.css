@@ -265,6 +265,72 @@ ul {
   margin: 0 auto;
 }
 
+.home .hwrapper {
+  max-width: 1200px;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.home h1 {
+  font-family: "Barlow", sans-serif;
+  font-size: 2.6666666667rem;
+  color: white;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.home header {
+  background-image: url("./../assets/header-image.jpg");
+}
+
+.home .nav {
+  display: none;
+}
+
+.home main .section1 {
+  background-color: #0c1423;
+}
+.home main .section1 > .hwrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20% 10%;
+}
+.home main .section1 > .hwrapper h2 {
+  font-size: 1.4rem;
+  color: white;
+  text-transform: uppercase;
+  margin-top: 0;
+  text-align: center;
+}
+.home main .section1 > .hwrapper p {
+  font-size: 0.6666666667rem;
+  color: white;
+  text-align: center;
+}
+
+.home button {
+  background-color: #86e0f9;
+  text-transform: uppercase;
+  font-size: 0.6666666667rem;
+  text-align: center;
+  letter-spacing: 1px;
+  color: black;
+  border: 2px solid #86e0f9;
+  padding: 2% 3%;
+  margin: 1rem;
+}
+
 .blog h1 {
   font-family: "Barlow", sans-serif;
   font-size: 2.6666666667rem;
