@@ -21,7 +21,7 @@ $fontfm-lato: 'Lato', sans-serif;
 }
   
 // styling home page (mobile first)
-//TODO........................
+
 
 // styling blog post (mobile first)
 .blog h1 {
@@ -54,22 +54,31 @@ nav {
     height: 100%;
     margin: -1rem auto;
        
-    .article-img {
-        box-shadow: -0.5rem 0.5rem #86e0f9;
-        position: relative;
-        left: 2.75%;
-    }
+    
     .wrap-article-comment {
         width: 90%;
         margin: 0; //change for desktop
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: left; // change for desktop
+
+        .article-img {
+            box-shadow: -0.9rem 0.9rem #86e0f9;
+            position: relative;
+            margin-left: 2%;
+            width: 110%;
+        }
+        
 
         article {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: left; // change for desktop
+            // display: flex;
+            // flex-direction: column;
+            // justify-content: space-between;
+            // align-items: left; // change for desktop
             border: 2px solid #86e0f9;
             border-right: none;
+            border-top: none;
             padding: 1rem;
             
             h3 {
