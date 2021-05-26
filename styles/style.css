@@ -749,7 +749,7 @@ footer p .fa-copyright {
 
 @media (min-width: 500px) {
   .home h1 {
-    font-size: 4rem;
+    font-size: 3.3333333333rem;
     padding-left: 30%;
     width: 20vw;
   }
@@ -768,14 +768,14 @@ footer p .fa-copyright {
   }
 
   .home main .section1 > .hwrapper h2 {
-    font-size: 2.1rem;
+    font-size: 1.75rem;
   }
   .home main .section1 > .hwrapper p {
-    font-size: 1rem;
+    font-size: 0.8333333333rem;
   }
 
   .home button {
-    font-size: 1rem;
+    font-size: 0.8333333333rem;
   }
 
   .section2 {
@@ -792,11 +792,11 @@ footer p .fa-copyright {
     top: -1.9rem;
   }
   .section2 .more-info h2 {
-    font-size: 2.1rem;
+    font-size: 1.75rem;
     margin-top: 1rem;
   }
   .section2 .more-info p {
-    font-size: 1rem;
+    font-size: 0.8333333333rem;
   }
   .section2 .right-image img {
     -webkit-box-shadow: -1.9rem 1.9rem #86e0f9;
@@ -809,13 +809,13 @@ footer p .fa-copyright {
     grid-gap: 0.2rem;
   }
   .section3 .links i {
-    font-size: 1.6rem;
+    font-size: 1.3333333333rem;
   }
   .section3 .links .links-text h3 {
-    font-size: 1.6rem;
+    font-size: 1.3333333333rem;
   }
   .section3 .links .links-text p {
-    font-size: 1rem;
+    font-size: 0.8333333333rem;
   }
 
   .banner-image {
@@ -837,12 +837,12 @@ footer p .fa-copyright {
             box-shadow: 0.9rem 0.9rem #86e0f9;
   }
   .section4 h2 {
-    font-size: 2.1rem;
+    font-size: 1.75rem;
     margin-top: 1rem;
     text-align: left;
   }
   .section4 p {
-    font-size: 1rem;
+    font-size: 0.8333333333rem;
     text-align: left;
   }
   .section4 .reading-area {
@@ -860,5 +860,104 @@ footer p .fa-copyright {
     grid-template-rows: none;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 2rem;
+  }
+}
+@media (min-width: 500px) {
+  .blog h1 {
+    font-size: 3.3333333333rem;
+    padding: 23vh 45vw;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .blog main {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: top;
+        -ms-flex-align: top;
+            align-items: top;
+  }
+
+  .wrap-blog .wrap-article-comment {
+    margin: 0 5%;
+  }
+  .wrap-blog .wrap-article-comment .article-img {
+    -webkit-box-shadow: -1.3rem 1.3rem #86e0f9;
+            box-shadow: -1.3rem 1.3rem #86e0f9;
+    position: relative;
+    margin-left: 2%;
+    width: 110%;
+  }
+  .wrap-blog .wrap-article-comment article {
+    border: 5px solid #86e0f9;
+    border-right: none;
+    border-top: none;
+  }
+  .wrap-blog .wrap-article-comment article h3 {
+    font-size: 3.3333333333rem;
+  }
+  .wrap-blog .wrap-article-comment article h4, .wrap-blog .wrap-article-comment article p {
+    font-size: 0.8333333333rem;
+  }
+
+  .comment-box h2 {
+    font-size: 1.75rem;
+  }
+  .comment-box .comment {
+    padding: 0 0 1rem 0;
+  }
+  .comment-box .comment .avatar {
+    display: block;
+  }
+  .comment-box .comment .flex-container .cmt-date,
+.comment-box .comment .flex-container .cmt-text {
+    font-size: 0.8333333333rem;
+  }
+  .comment-box form fieldset input[type=text],
+.comment-box form fieldset input[type=email],
+.comment-box form fieldset textarea {
+    font-size: 0.8333333333rem;
+  }
+  .comment-box form fieldset input[type=text]::-webkit-input-placeholder, .comment-box form fieldset input[type=email]::-webkit-input-placeholder, .comment-box form fieldset textarea::-webkit-input-placeholder {
+    font-size: 0.8333333333rem;
+  }
+  .comment-box form fieldset input[type=text]::-moz-placeholder, .comment-box form fieldset input[type=email]::-moz-placeholder, .comment-box form fieldset textarea::-moz-placeholder {
+    font-size: 0.8333333333rem;
+  }
+  .comment-box form fieldset input[type=text]:-ms-input-placeholder, .comment-box form fieldset input[type=email]:-ms-input-placeholder, .comment-box form fieldset textarea:-ms-input-placeholder {
+    font-size: 0.8333333333rem;
+  }
+  .comment-box form fieldset input[type=text]::-ms-input-placeholder, .comment-box form fieldset input[type=email]::-ms-input-placeholder, .comment-box form fieldset textarea::-ms-input-placeholder {
+    font-size: 0.8333333333rem;
+  }
+  .comment-box form fieldset input[type=text]::placeholder,
+.comment-box form fieldset input[type=email]::placeholder,
+.comment-box form fieldset textarea::placeholder {
+    font-size: 0.8333333333rem;
+  }
+  .comment-box form fieldset button {
+    font-size: 0.8333333333rem;
+  }
+
+  .blog aside {
+    margin: 5% 3% 0 9%;
+    width: 35vw;
+  }
+  .blog aside .aside-image {
+    display: block;
+  }
+  .blog aside h2 {
+    font-size: 1rem;
+  }
+  .blog aside p,
+.blog aside ul li a {
+    font-size: 0.8333333333rem;
   }
 }
