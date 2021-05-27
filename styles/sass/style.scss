@@ -420,13 +420,15 @@ nav {
 .blog aside {
     // width: 90%; //change for desktop
     margin:  5% auto;
-    background-color: #0f614e;
+    .for-background {
+        background-color: #0f614e;
+    }
     .aside-image {
         display: none; // change for desktop
     }
     h2 {
-        margin: 5%;
-        // padding: 0.5rem; // change for desktop
+        margin: 0%;
+        padding: 1rem; // change for desktop
         @include font-size-mobile($fontsz-heading4); // change for dsktp
         color: white;
         text-transform: uppercase;
@@ -441,11 +443,13 @@ nav {
     }
     ul li {
         list-style-type: disc;
+        color: white;
+        margin-left: 1rem;
     }
     ul,
     p {
-        margin: 0.5rem;
-        margin-left: 5%;
+        // margin: 0.5rem;
+        // margin-left: 5%;
         padding: 1rem;
     }
 }
@@ -458,7 +462,7 @@ footer {
     background-color: #86e0f9;
     p {
         margin: 0;
-        padding: 5%;
+        padding: 1% 5% 1% 5%;
         text-align: center;
         @include font-size-mobile($fontsz-body); // change for dsktp
         color: black;
@@ -606,81 +610,48 @@ footer {
 // styling blog post DESKTOP
 @media (min-width: 500px) {
     .blog h1 {
-        // font-family: $fontfm-barlow;
         @include font-size-desktop($fontsz-heading2); // change for dsktp
-        // color: white;
-        // text-transform: uppercase;
-        // margin: 0;
-        padding: 23vh 45vw; // change for dsktop
+        padding: 23vh 41vw; // change for dsktop
        
     }
-    // .blog header {
-        // background-image: url("./../assets/blog-header.jpg");
-        // background-position: 70% 20%;
-        // height: 80vh;
-    // }
     nav {
         display: none;
     }
     .blog main {
-        // background-color: #0c1423;
-        // display: flex;
         flex-direction: row-reverse; //change for desktop
         justify-content: space-between;
         align-items: top;
+        padding-bottom: 5%;
     }
     
     .wrap-blog { 
-        // width: 90%;
-        // height: 100%;
-        // margin: -1rem auto;
+        margin-top: -12rem;
            
         
         .wrap-article-comment {
-            // width: 90%;
             margin: 0 5%; //change for desktop
-            // display: flex;
-            // flex-direction: column;
-            // justify-content: space-between;
-            // align-items: left; // change for desktop
     
             .article-img {
                 box-shadow: -1.3rem 1.3rem #86e0f9;
-                position: relative;
-                margin-left: 2%;
-                width: 110%;
+                margin-left: 3.2%;
+                width: 100%;
             }
             
     
             article {
-                // display: flex;
-                // flex-direction: column;
-                // justify-content: space-between;
-                // align-items: left; // change for desktop
                 border: 5px solid #86e0f9;
                 border-right: none;
                 border-top: none;
-                // padding: 1rem;
                 
                 h3 {
-                    // font-family: $fontfm-barlow;
                     @include font-size-desktop($fontsz-heading2); // change for dsktp
-                    // color: white;
-                    // text-transform: uppercase;
-                    // margin-top: 1rem; // change for desktop
                 }
         
                 h4, p {
-                    // font-family: $fontfm-lato;
                     @include font-size-desktop($fontsz-body); // change for dsktp
-                    // line-height: 1rem; // change for desktop
-                    // color: white;
+                    line-height: 1.5rem; // change for desktop
         
                 }
-                
-                
-                
-                
             }
            
         }
@@ -691,81 +662,45 @@ footer {
     .comment-box {
         h2 {
             @include font-size-desktop($fontsz-heading3); // change for dsktp
-            // color: white;
     
         }
         .comment {
             padding: 0 0 1rem 0;
-            // display: flex;
             .avatar {
-                display: block; // change for desktop
+                display: inline-block; // change for desktop
+                width: 50%;
+                margin: 3.5% 5% 0 0;
             }
             .flex-container {
-                // display: flex;
-                // flex-direction: column;
                 .cmt-date,
                 .cmt-text {
                     @include font-size-desktop($fontsz-body); // change for dsktp
-                    // color: white;
-                    // line-height: 1rem; // change for desktop
-                    // order: 1;
+                    line-height: 1.5rem; // change for desktop
                     
                 }
-                // .cmt-date {
-                    // padding-top: 10px;
-                    // border-top: 1px solid #86e0f9; // change for desktop
-                // }
+                .cmt-date {
+                    border-top: none; // change for desktop
+                }
                 
             }
            
         }
         form {
-            // margin: 0 auto;
             fieldset {
-                // border: 0 none;
                 input[type=text],
                 input[type=email],
                 textarea {
-                    // width: 100%;
-                    // background-color: #0c1423;
-                    // margin: 2%;
-                    // border: 2px solid #86e0f9;
-                    // color: white;
                     @include font-size-desktop($fontsz-body);
-                    // font-family: $fontfm-lato;
-                    // line-height: normal;
-                    // padding: 3%;
     
-                    // &:focus {
-                        // border: 0;
-                        // outline-style: dotted;
-                        // outline-color: 86e0f9;
-                    // }
     
                     &::placeholder {
-                        // color: white;
                         @include font-size-desktop($fontsz-body); //change for desktop
-                        // font-family: $fontfm-lato;
                     }
                     
                 }
-                // input[type=text],
-                // input[type=email] {
-                    // border-top: 0;
-                    // border-left: 0;
-                    // border-right: 0;
     
-                // }
                 button {
-                    // width: 100%;
-                    // margin: 2%;
-                    // background-color: #0f614e;
-                    // text-transform: uppercase;
                     @include font-size-desktop($fontsz-button);
-                    // text-align: center;
-                    // letter-spacing: 1px;
-                    // color: white;
-                    // border: 2px solid #0f614e;
     
                 }  
                 
@@ -774,37 +709,35 @@ footer {
     }
     
     .blog aside {
-        // width: 90%; //change for desktop
         margin:  5% 3% 0 9%;
-        // background-color: #0f614e;
+        
         width: 35vw;
+        
         .aside-image {
             display: block; // change for desktop
+            width: 110%;
+            position: relative;
+            right: 20%;
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+        }
+        h2:first-of-type {
+            padding-top: 15%;
         }
         h2 {
-            // margin: 5%;
-            // padding: 0.5rem; // change for desktop
             font-size: 1rem; // change for dsktp
-            // color: white;
-            // text-transform: uppercase;
-            // text-align: left;
+            @include font-size-desktop($fontsz-body); // change for dsktp
     
         }
         p, 
         ul li a {
             @include font-size-desktop($fontsz-body); // change for dsktp
-            // color: white;
-            // line-height: normal;
+            line-height: 1.5rem;
         }
-        // ul li {
-            // list-style-type: disc;
-        // }
-        // ul,
-        // p {
-            // margin: 0.5rem;
-            // margin-left: 5%;
-            // padding: 1rem;
-        // }
+        ul,
+        p {
+            padding: 0 1rem 1rem 1rem;
+        }
     }
     
     
