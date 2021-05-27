@@ -307,8 +307,6 @@ nav ul li a:hover {
   background-image: url("./../assets/header-image.jpg");
   height: 65vh;
   position: relative;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
 }
 .home header .header-image {
   width: 60%;

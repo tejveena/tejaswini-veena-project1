@@ -41,8 +41,8 @@ $fontfm-lato: 'Lato', sans-serif;
     background-image: url("./../assets/header-image.jpg");
     height: 65vh;
     position: relative;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    // display: grid;
+    // grid-template-columns: 1fr 1fr;
     .header-image {
         width: 60%;
         position: absolute;
