@@ -157,27 +157,41 @@ $fontfm-lato: 'Lato', sans-serif;
         display: flex;
         flex-direction: row;
         align-items: top;
-        // justify-content: space-between;
-        
-        i {
-            color: #86e0f9;
-            padding: 5%;
-            padding-top: 10%;
+        a {
+            text-decoration: none;
             @include font-size-mobile($fontsz-heading4);
+            text-transform: uppercase;
+            font-family: $fontfm-barlow;
+            color: white;
+        }
+        .links-icon {
+            background-color:#86e0f9;
+            height:fit-content;
+            padding: 2%;
+            margin-top: 9%;
+            border-radius: 50%;
+            
+            i {
+                color: black;
+                padding: 0 1% 0 1%;
+                // padding-top: 10%;
+                @include font-size-mobile($fontsz-heading4);
+    
+            }
+        }
+        .extrapad {
+            padding: 2% 2.5%;
 
         }
+        
+        
         .links-text {
             display: flex;
             flex-direction: column;
             align-items: left;
             justify-content: flex-start;
             padding: 3%;
-            h3 {
-                @include font-size-mobile($fontsz-heading4);
-                text-transform: uppercase;
-                font-family: $fontfm-barlow;
-                color: white;
-            }
+            
             p {
                 @include font-size-mobile($fontsz-body);
                 font-family: $fontfm-lato;
@@ -185,7 +199,9 @@ $fontfm-lato: 'Lato', sans-serif;
                 flex-wrap: wrap;
             }
         }
+        
     }
+    
 }
 
 .banner-image {     // change for desktop
