@@ -1,5 +1,6 @@
 
 @import "./normalize";
+@import "./nav";
 
 $fontsz-header: 138;
 $fontsz-heading2: 80;
@@ -454,8 +455,129 @@ nav {
     }
 }
 
-// styling contact page mobile view
-// TODO
+// styling contact page MOBILE view
+
+.contact header {
+    background-image: url("./../assets/contact-header.jpg");
+    height: 50vh;
+    h1 {
+        font-family: $fontfm-barlow;
+        @include font-size-mobile($fontsz-heading2); // change for dsktp
+        color: white;
+        text-transform: uppercase;
+        margin: 0;
+        padding: 14vh 32vw; // change for dsktop
+    }
+}
+
+.contact main {
+    background-color: #0c1423;
+    .cwrapper {
+        
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-rows: 1fr 2fr;
+        .addresses {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2%;
+            padding-top: 10%;
+        }
+        .social-network-icons {
+            
+            i {
+                color: white;
+                @include font-size-mobile($fontsz-body);
+            }
+        }
+        .email-address {
+            color: white;
+            font-family: $fontfm-lato;
+            text-transform: uppercase;
+            font-weight: bold;
+            @include font-size-mobile($fontsz-body);
+            text-align: left; // change for desktop
+        }
+        p {
+            color: white;
+            font-family: $fontfm-lato;
+            @include font-size-mobile($fontsz-body);
+            text-align: center; // change for desktop
+            line-height: 1.5rem;
+            span {
+                display: block;
+            }
+        }
+    }
+    .form-wrapper {
+        // width: 80%;
+        // margin: 5%;
+        margin-left: 5%;
+        width: 90%;
+    }
+    form {
+        background-color: #0f614e;
+        
+        fieldset {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            border: 0 none;
+            input[type=text],
+            input[type=email],
+            textarea {
+                width: 100%;
+                background-color: #0f614e;
+                margin: 2%;
+                border: 2px solid #86e0f9;
+                color: white;
+                @include font-size-mobile($fontsz-body);
+                font-family: $fontfm-lato;
+                line-height: normal;
+                padding: 3%;
+        
+                &:focus {
+                    // border: 0;
+                    outline-style: dotted;
+                    outline-color: 86e0f9;
+                }
+        
+                &::placeholder {
+                    color: white;
+                    @include font-size-mobile($fontsz-body); //change for desktop
+                    font-family: $fontfm-lato;
+                }
+                
+            }
+            input[type=text],
+            input[type=email] {
+                border-top: 0;
+                border-left: 0;
+                border-right: 0;
+        
+            }
+            button {
+                width: 100%;
+                margin: 2%;
+                background-color: black;
+                text-transform: uppercase;
+                @include font-size-mobile($fontsz-button);
+                text-align: center;
+                letter-spacing: 1px;
+                color: white;
+                border: 2px solid black;
+        
+            }  
+            
+        }  
+    }            
+}
+
+
 
 footer {
     
@@ -496,7 +618,7 @@ footer {
         }
     }
     .home .nav {
-        display: none;
+        display: block;
     }
     .home main {
         .section1>.hwrapper{
@@ -615,7 +737,7 @@ footer {
        
     }
     nav {
-        display: none;
+        display: inline;
     }
     .blog main {
         flex-direction: row-reverse; //change for desktop
@@ -743,3 +865,135 @@ footer {
     
 }
 
+// styling contact page DESKTOP view
+
+@media (min-width: 500px) {
+    .contact header {
+        // background-image: url("./../assets/contact-header.jpg");
+        // height: 50vh;
+        h1 {
+            // font-family: $fontfm-barlow;
+            @include font-size-desktop($fontsz-heading2); // change for dsktp
+            // color: white;
+            // text-transform: uppercase;
+            // margin: 0;
+            padding: 28vh 15vw 28vw 34vw; // change for dsktop
+        }
+    }
+    
+    .contact main {
+        // background-color: #0c1423;
+        .cwrapper {
+            
+            // width: 90%;
+            // max-width: 1200px;
+            // margin: 0 auto;
+            // display: grid;
+            grid-template-rows: none;
+            grid-template-columns: 1fr 2fr; // change for destkop
+            .addresses {
+                width: 70%;
+                // display: flex;
+                // flex-direction: column;
+                align-items: left; // change for desktop
+                justify-content: center;
+                // padding: 2%;
+                padding-left: 20%;
+            }
+            .social-network-icons {
+                // align-self: left;
+                width: 100%;
+                
+                i {
+                    // color: white;
+                    @include font-size-desktop($fontsz-body);
+                    padding: 1.5%;
+                }
+            
+            }
+            .email-address {
+                width: 100%;
+                // color: white;
+                // font-family: $fontfm-lato;
+                // text-transform: uppercase;
+                // font-weight: bold;
+                @include font-size-desktop($fontsz-body);
+                text-align: left; // change for desktop
+                // align-self: left;
+                
+            }
+            p {
+                // color: white;
+                // font-family: $fontfm-lato;
+                @include font-size-desktop($fontsz-body);
+                text-align: left; // change for desktop
+                line-height: 1rem;
+                // span {
+                    // display: block;
+                // }
+            }
+        }
+        .form-wrapper {
+            width: 80%;
+            margin: 5%;
+            margin-left: 10%;
+            // width: 90%;
+            margin-top: -9%;
+            margin-bottom: 10%;
+        }
+        form {
+            box-shadow: -0.9rem 0.9rem #86e0f9;
+            fieldset {
+                // border: 0 none;
+                input[type=text],
+                input[type=email],
+                textarea {
+                    // width: 100%;
+                    // background-color: #0c1423;
+                    // margin: 2%;
+                    // border: 2px solid #86e0f9;
+                    // color: white;
+                    @include font-size-desktop($fontsz-body);
+                    // font-family: $fontfm-lato;
+                    // line-height: normal;
+                    // padding: 3%;
+            // 
+                    // &:focus {
+                        // border: 0;
+                        // outline-style: dotted;
+                        // outline-color: 86e0f9;
+                    // }
+            
+                    &::placeholder {
+                        // color: white;
+                        @include font-size-desktop($fontsz-body); //change for desktop
+                        // font-family: $fontfm-lato;
+                    }
+                    
+                }
+                // input[type=text],
+                // input[type=email] {
+                    // border-top: 0;
+                    // border-left: 0;
+                    // border-right: 0;
+            
+                // }
+                button {
+                    // width: 100%;
+                    // margin: 2%;
+                    // background-color: #0f614e;
+                    // text-transform: uppercase;
+                    @include font-size-desktop($fontsz-button);
+                    // text-align: center;
+                    // letter-spacing: 1px;
+                    // color: white;
+                    // border: 2px solid #0f614e;
+            
+                }  
+                
+            }  
+        }            
+    }
+    
+    
+}

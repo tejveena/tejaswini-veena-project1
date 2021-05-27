@@ -265,6 +265,27 @@ ul {
   margin: 0 auto;
 }
 
+nav {
+  float: right;
+  padding: 2% 5%;
+}
+nav ul li {
+  list-style: none;
+  float: left;
+}
+nav ul li a {
+  padding: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: Barlow;
+  font-size: 0.82rem;
+  letter-spacing: 1.2px;
+  color: white;
+}
+nav ul li a:hover {
+  color: #86e0f9;
+}
+
 .home .hwrapper {
   max-width: 1200px;
   width: 85%;
@@ -735,6 +756,151 @@ nav {
   padding: 1rem;
 }
 
+.contact header {
+  background-image: url("./../assets/contact-header.jpg");
+  height: 50vh;
+}
+.contact header h1 {
+  font-family: "Barlow", sans-serif;
+  font-size: 2.6666666667rem;
+  color: white;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 14vh 32vw;
+}
+
+.contact main {
+  background-color: #0c1423;
+}
+.contact main .cwrapper {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+}
+.contact main .cwrapper .addresses {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2%;
+  padding-top: 10%;
+}
+.contact main .cwrapper .social-network-icons i {
+  color: white;
+  font-size: 0.6666666667rem;
+}
+.contact main .cwrapper .email-address {
+  color: white;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.6666666667rem;
+  text-align: left;
+}
+.contact main .cwrapper p {
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-size: 0.6666666667rem;
+  text-align: center;
+  line-height: 1.5rem;
+}
+.contact main .cwrapper p span {
+  display: block;
+}
+.contact main .form-wrapper {
+  margin-left: 5%;
+  width: 90%;
+}
+.contact main form {
+  background-color: #0f614e;
+}
+.contact main form fieldset {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border: 0 none;
+}
+.contact main form fieldset input[type=text],
+.contact main form fieldset input[type=email],
+.contact main form fieldset textarea {
+  width: 100%;
+  background-color: #0f614e;
+  margin: 2%;
+  border: 2px solid #86e0f9;
+  color: white;
+  font-size: 0.6666666667rem;
+  font-family: "Lato", sans-serif;
+  line-height: normal;
+  padding: 3%;
+}
+.contact main form fieldset input[type=text]:focus,
+.contact main form fieldset input[type=email]:focus,
+.contact main form fieldset textarea:focus {
+  outline-style: dotted;
+  outline-color: 86f9;
+}
+.contact main form fieldset input[type=text]::-webkit-input-placeholder, .contact main form fieldset input[type=email]::-webkit-input-placeholder, .contact main form fieldset textarea::-webkit-input-placeholder {
+  color: white;
+  font-size: 0.6666666667rem;
+  font-family: "Lato", sans-serif;
+}
+.contact main form fieldset input[type=text]::-moz-placeholder, .contact main form fieldset input[type=email]::-moz-placeholder, .contact main form fieldset textarea::-moz-placeholder {
+  color: white;
+  font-size: 0.6666666667rem;
+  font-family: "Lato", sans-serif;
+}
+.contact main form fieldset input[type=text]:-ms-input-placeholder, .contact main form fieldset input[type=email]:-ms-input-placeholder, .contact main form fieldset textarea:-ms-input-placeholder {
+  color: white;
+  font-size: 0.6666666667rem;
+  font-family: "Lato", sans-serif;
+}
+.contact main form fieldset input[type=text]::-ms-input-placeholder, .contact main form fieldset input[type=email]::-ms-input-placeholder, .contact main form fieldset textarea::-ms-input-placeholder {
+  color: white;
+  font-size: 0.6666666667rem;
+  font-family: "Lato", sans-serif;
+}
+.contact main form fieldset input[type=text]::placeholder,
+.contact main form fieldset input[type=email]::placeholder,
+.contact main form fieldset textarea::placeholder {
+  color: white;
+  font-size: 0.6666666667rem;
+  font-family: "Lato", sans-serif;
+}
+.contact main form fieldset input[type=text],
+.contact main form fieldset input[type=email] {
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+}
+.contact main form fieldset button {
+  width: 100%;
+  margin: 2%;
+  background-color: black;
+  text-transform: uppercase;
+  font-size: 0.6666666667rem;
+  text-align: center;
+  letter-spacing: 1px;
+  color: white;
+  border: 2px solid black;
+}
+
 footer {
   background-color: #86e0f9;
 }
@@ -767,7 +933,7 @@ footer p .fa-copyright {
   }
 
   .home .nav {
-    display: none;
+    display: block;
   }
 
   .home main .section1 > .hwrapper h2 {
@@ -872,7 +1038,7 @@ footer p .fa-copyright {
   }
 
   nav {
-    display: none;
+    display: inline;
   }
 
   .blog main {
@@ -986,5 +1152,79 @@ footer p .fa-copyright {
   .blog aside ul,
 .blog aside p {
     padding: 0 1rem 1rem 1rem;
+  }
+}
+@media (min-width: 500px) {
+  .contact header h1 {
+    font-size: 3.3333333333rem;
+    padding: 28vh 15vw 28vw 34vw;
+  }
+
+  .contact main .cwrapper {
+    grid-template-rows: none;
+    grid-template-columns: 1fr 2fr;
+  }
+  .contact main .cwrapper .addresses {
+    width: 70%;
+    -webkit-box-align: left;
+        -ms-flex-align: left;
+            align-items: left;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-left: 20%;
+  }
+  .contact main .cwrapper .social-network-icons {
+    width: 100%;
+  }
+  .contact main .cwrapper .social-network-icons i {
+    font-size: 0.8333333333rem;
+    padding: 1.5%;
+  }
+  .contact main .cwrapper .email-address {
+    width: 100%;
+    font-size: 0.8333333333rem;
+    text-align: left;
+  }
+  .contact main .cwrapper p {
+    font-size: 0.8333333333rem;
+    text-align: left;
+    line-height: 1rem;
+  }
+  .contact main .form-wrapper {
+    width: 80%;
+    margin: 5%;
+    margin-left: 10%;
+    margin-top: -9%;
+    margin-bottom: 10%;
+  }
+  .contact main form {
+    -webkit-box-shadow: -0.9rem 0.9rem #86e0f9;
+            box-shadow: -0.9rem 0.9rem #86e0f9;
+  }
+  .contact main form fieldset input[type=text],
+.contact main form fieldset input[type=email],
+.contact main form fieldset textarea {
+    font-size: 0.8333333333rem;
+  }
+  .contact main form fieldset input[type=text]::-webkit-input-placeholder, .contact main form fieldset input[type=email]::-webkit-input-placeholder, .contact main form fieldset textarea::-webkit-input-placeholder {
+    font-size: 0.8333333333rem;
+  }
+  .contact main form fieldset input[type=text]::-moz-placeholder, .contact main form fieldset input[type=email]::-moz-placeholder, .contact main form fieldset textarea::-moz-placeholder {
+    font-size: 0.8333333333rem;
+  }
+  .contact main form fieldset input[type=text]:-ms-input-placeholder, .contact main form fieldset input[type=email]:-ms-input-placeholder, .contact main form fieldset textarea:-ms-input-placeholder {
+    font-size: 0.8333333333rem;
+  }
+  .contact main form fieldset input[type=text]::-ms-input-placeholder, .contact main form fieldset input[type=email]::-ms-input-placeholder, .contact main form fieldset textarea::-ms-input-placeholder {
+    font-size: 0.8333333333rem;
+  }
+  .contact main form fieldset input[type=text]::placeholder,
+.contact main form fieldset input[type=email]::placeholder,
+.contact main form fieldset textarea::placeholder {
+    font-size: 0.8333333333rem;
+  }
+  .contact main form fieldset button {
+    font-size: 0.8333333333rem;
   }
 }
