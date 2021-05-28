@@ -265,27 +265,6 @@ ul {
   margin: 0 auto;
 }
 
-nav {
-  float: right;
-  padding: 2% 5%;
-}
-nav ul li {
-  list-style: none;
-  float: left;
-}
-nav ul li a {
-  padding: 1rem;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-family: Barlow;
-  font-size: 0.82rem;
-  letter-spacing: 1.2px;
-  color: white;
-}
-nav ul li a:hover {
-  color: #86e0f9;
-}
-
 .home .hwrapper {
   max-width: 1200px;
   width: 85%;
@@ -564,10 +543,6 @@ nav ul li a:hover {
   background-size: cover;
   background-position: 70% 20%;
   height: 80vh;
-}
-
-nav {
-  display: none;
 }
 
 .blog main {
@@ -929,6 +904,55 @@ footer p .fa-copyright {
   font-size: 0.6666666667rem;
 }
 
+#toggle {
+  font-size: 24px;
+}
+
+nav {
+  background-color: black;
+  text-align: center;
+}
+
+nav ul {
+  display: none;
+}
+
+a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+@media (min-width: 500px) {
+  #toggle {
+    font-size: 0px;
+  }
+
+  nav {
+    float: right;
+    padding: 2% 5%;
+    background-color: transparent;
+    text-align: unset;
+  }
+  nav ul {
+    display: block;
+  }
+  nav ul li {
+    list-style: none;
+    float: left;
+  }
+  nav ul li a {
+    padding: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Barlow;
+    font-size: 0.82rem;
+    letter-spacing: 1.2px;
+    color: white;
+  }
+  nav ul li a:hover {
+    color: #86e0f9;
+  }
+}
 @media (min-width: 500px) {
   .home h1 {
     font-size: 5.75rem;
@@ -1050,10 +1074,6 @@ footer p .fa-copyright {
   .blog h1 {
     font-size: 3.3333333333rem;
     padding: 23vh 41vw;
-  }
-
-  nav {
-    display: inline;
   }
 
   .blog main {

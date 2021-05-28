@@ -1,6 +1,6 @@
 
 @import "./normalize";
-@import "./nav";
+
 
 $fontsz-header: 138;
 $fontsz-heading2: 80;
@@ -281,10 +281,10 @@ $fontfm-lato: 'Lato', sans-serif;
     background-size: cover;
     background-position: 70% 20%;
     height: 80vh;
+    
+      
 }
-nav {
-    display: none;
-}
+
 .blog main {
     background-color: #0c1423;
     display: flex;
@@ -618,6 +618,8 @@ footer {
 }
 
 
+@import "./nav";
+
 // styling home page for DESKTOP
 
 
@@ -758,9 +760,7 @@ footer {
         padding: 23vh 41vw; // change for dsktop
        
     }
-    nav {
-        display: inline;
-    }
+   
     .blog main {
         flex-direction: row-reverse; //change for desktop
         justify-content: space-between;

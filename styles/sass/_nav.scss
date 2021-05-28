@@ -1,21 +1,61 @@
-nav {
-    // position: absolute;
-    float: right;
-    padding: 2% 5%;
-    ul {
-        li {
-            list-style: none;
-            float: left;
-            a {
-                padding:1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-                font-family: Barlow;
-                font-size: 0.82rem;
-                letter-spacing: 1.2px;
-                color: white;
-                &:hover {
-                    color: #86e0f9;
+// Copyright (c) 2021 by Daniel Bird (https://codepen.io/danieldbird/pen/JDxal)
+
+// Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+// The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+// Simple mobile navigation menu taken from codepen copyright attached above.
+
+#toggle { 
+    font-size: 24px; 
+  }
+  nav {
+    background-color: black;
+    text-align: center;
+  }
+  nav ul { 
+    display: none; 
+  }
+  a { 
+    color: #ccc; text-decoration: none; 
+  }
+  
+
+
+@media (min-width: 500px) {
+
+    #toggle { 
+        font-size: 0px; 
+      }
+      
+    nav {
+        // position: absolute;
+        float: right;
+        padding: 2% 5%;
+        background-color: transparent;
+        text-align: unset;
+        // a {
+        //     display: none;
+        // }
+        ul {
+            display: block;
+            li {
+                list-style: none;
+                float: left;
+                a {
+                    padding:1rem;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-family: Barlow;
+                    font-size: 0.82rem;
+                    letter-spacing: 1.2px;
+                    color: white;
+                    &:hover {
+                        color: #86e0f9;
+                    }
                 }
             }
         }
