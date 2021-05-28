@@ -283,7 +283,8 @@ ul {
 }
 
 .home header {
-  background-image: url("./../assets/header-image.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("./../assets/header-image.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./../assets/header-image.jpg");
   background-size: cover;
   height: 65vh;
   position: relative;
@@ -333,14 +334,16 @@ ul {
 
 .home button {
   background-color: #86e0f9;
+  border: 2px solid #86e0f9;
+  padding: 2% 3%;
+  margin: 1rem;
+}
+.home button a {
   text-transform: uppercase;
   font-size: 0.6666666667rem;
   text-align: center;
   letter-spacing: 1px;
   color: black;
-  border: 2px solid #86e0f9;
-  padding: 2% 3%;
-  margin: 1rem;
 }
 
 .section2 {
@@ -368,9 +371,11 @@ ul {
 }
 .section2 .more-info button {
   background-color: #0c1423;
-  color: white;
   margin: 0;
   border: 2px solid #0c1423;
+}
+.section2 .more-info button a {
+  color: white;
 }
 .section2 .more-info .reading-area {
   display: -webkit-box;
@@ -584,18 +589,26 @@ ul {
       -ms-flex-align: left;
           align-items: left;
 }
-.wrap-blog .wrap-article-comment .article-img {
-  -webkit-box-shadow: -0.9rem 0.9rem #86e0f9;
-          box-shadow: -0.9rem 0.9rem #86e0f9;
-  position: relative;
-  margin-left: 2%;
-  width: 110%;
-}
 .wrap-blog .wrap-article-comment article {
+  padding: 1rem;
+}
+.wrap-blog .wrap-article-comment article .back-border {
   border: 2px solid #86e0f9;
   border-right: none;
   border-top: none;
-  padding: 1rem;
+}
+.wrap-blog .wrap-article-comment article .article-img {
+  background-color: #86e0f9;
+  width: 110%;
+}
+.wrap-blog .wrap-article-comment article .article-img img {
+  margin-top: -1.5rem;
+  position: relative;
+  top: -1rem;
+  right: -1rem;
+}
+.wrap-blog .wrap-article-comment article .article-reading {
+  padding: 3%;
 }
 .wrap-blog .wrap-article-comment article h3 {
   font-family: "Barlow", sans-serif;
@@ -611,6 +624,10 @@ ul {
   color: white;
 }
 
+.comment-box {
+  width: 85%;
+  margin: 0 auto;
+}
 .comment-box h2 {
   font-size: 1.4rem;
   color: white;
@@ -927,6 +944,10 @@ a {
     font-size: 0px;
   }
 
+  nav > a {
+    display: none;
+  }
+
   nav {
     float: right;
     padding: 2% 5%;
@@ -1094,25 +1115,55 @@ a {
     margin-top: -12rem;
   }
   .wrap-blog .wrap-article-comment {
-    margin: 0 5%;
-  }
-  .wrap-blog .wrap-article-comment .article-img {
-    -webkit-box-shadow: -1.3rem 1.3rem #86e0f9;
-            box-shadow: -1.3rem 1.3rem #86e0f9;
-    margin-left: 3.2%;
     width: 100%;
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: left;
+        -ms-flex-align: left;
+            align-items: left;
   }
   .wrap-blog .wrap-article-comment article {
-    border: 5px solid #86e0f9;
+    padding: 1rem;
+  }
+  .wrap-blog .wrap-article-comment article .back-border {
+    border: 2px solid #86e0f9;
     border-right: none;
     border-top: none;
   }
+  .wrap-blog .wrap-article-comment article .article-img {
+    background-color: #86e0f9;
+    width: 100%;
+  }
+  .wrap-blog .wrap-article-comment article .article-img img {
+    margin-top: -1.5rem;
+    position: relative;
+    top: -1rem;
+    right: -1rem;
+  }
+  .wrap-blog .wrap-article-comment article .article-reading {
+    padding: 5%;
+  }
   .wrap-blog .wrap-article-comment article h3 {
-    font-size: 3.3333333333rem;
+    font-family: "Barlow", sans-serif;
+    font-size: 1.75rem;
+    color: white;
+    text-transform: uppercase;
+    margin-top: 1rem;
   }
   .wrap-blog .wrap-article-comment article h4, .wrap-blog .wrap-article-comment article p {
+    font-family: "Lato", sans-serif;
     font-size: 0.8333333333rem;
     line-height: 1.5rem;
+    color: white;
   }
 
   .comment-box h2 {

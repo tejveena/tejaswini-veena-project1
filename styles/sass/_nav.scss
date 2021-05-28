@@ -30,7 +30,9 @@
     #toggle { 
         font-size: 0px; 
       }
-      
+    nav>a {
+        display: none;
+    }  
     nav {
         // position: absolute;
         float: right;
