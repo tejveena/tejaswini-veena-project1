@@ -39,6 +39,7 @@ $fontfm-lato: 'Lato', sans-serif;
 }
 .home header {
     background-image: url("./../assets/header-image.jpg");
+    background-size: cover;
     height: 65vh;
     position: relative;
     // display: grid;
@@ -277,6 +278,7 @@ $fontfm-lato: 'Lato', sans-serif;
 }
 .blog header {
     background-image: url("./../assets/blog-header.jpg");
+    background-size: cover;
     background-position: 70% 20%;
     height: 80vh;
 }
@@ -475,6 +477,7 @@ nav {
 
 .contact header {
     background-image: url("./../assets/contact-header.jpg");
+    background-size: cover;
     height: 50vh;
     h1 {
         font-family: $fontfm-barlow;
@@ -621,9 +624,10 @@ footer {
 @media (min-width: 500px) {
     
     .home h1 {
-        @include font-size-desktop($fontsz-heading2); // change for dsktp
-        padding-left: 30%;
-        width: 20vw;
+        @include font-size-desktop($fontsz-header); // change for dsktp
+        padding: 12vh 12vw 29vw 19vw;
+        width: 30vw;
+
     }
     .home header {
         height: 80vh;
@@ -682,6 +686,8 @@ footer {
         grid-template-rows: none;
         grid-template-columns: 1fr 1fr; // change for desktop
         grid-gap: 0.2rem;
+        padding-top: 10%;
+        padding-bottom: 10%;
         .links {
             
             i {
@@ -893,7 +899,7 @@ footer {
             // color: white;
             // text-transform: uppercase;
             // margin: 0;
-            padding: 28vh 15vw 28vw 34vw; // change for dsktop
+            padding: 14vh 14vw 28vw 35vw; // change for dsktop
         }
     }
     
@@ -912,7 +918,7 @@ footer {
                 // display: flex;
                 // flex-direction: column;
                 align-items: left; // change for desktop
-                justify-content: center;
+                justify-content: flex-start;
                 // padding: 2%;
                 padding-left: 20%;
             }
@@ -943,7 +949,7 @@ footer {
                 // font-family: $fontfm-lato;
                 @include font-size-desktop($fontsz-body);
                 text-align: left; // change for desktop
-                line-height: 1rem;
+                line-height: 1.2rem;
                 // span {
                     // display: block;
                 // }
