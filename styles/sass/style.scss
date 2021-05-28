@@ -824,6 +824,7 @@ footer {
     
     }
     .comment-box {
+        width: 85%;
         h2 {
             @include font-size-desktop($fontsz-heading3); // change for dsktp
     
@@ -850,7 +851,12 @@ footer {
            
         }
         form {
+            width: 100%;
             fieldset {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
                 input[type=text],
                 input[type=email],
                 textarea {
