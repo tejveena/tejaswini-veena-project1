@@ -65,12 +65,25 @@ document.addEventListener("DOMContentLoaded", function() {
         const currentYear = currentDate.getFullYear();
 
         // In the format Tuesday October 9th, 2018
-        const dateString = dayName +" "+ MonthName +" "+ currentDateOfMonth+superScript +", "+currentYear;
+        const dateString = dayName +" "+ MonthName +" "+ currentDateOfMonth+superScript +", "+currentYear+" by "+cmtName.value;
         // console.log(dateString);
 
-        timeStamp.appendChild(document.createTextNode(dateString));
+        timeStamp.append(document.createTextNode(dateString));
         textDiv.appendChild(timeStamp);
+        // console.log(textDiv);
+
+
+
+        const commentText = document.createElement('p');
+        commentText.classList.add('cmt-text');
+        commentText.append(document.createTextNode(cmtText.value));
+
+        textDiv.appendChild(commentText);
         console.log(textDiv);
+
+        // finally append the text div to li
+        liEl.appendChild(textDiv);
+
     })
 });
 
